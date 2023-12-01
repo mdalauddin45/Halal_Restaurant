@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +16,10 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold">HALAL</a>
+          <a class="navbar-brand" href="/">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+            HALAL
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -71,7 +75,7 @@
               <p class="card-text">
                 {{ i.strCategoryDescription|truncatewords:10 }}
               </p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_{{ forloop.counter }}">Check Out</a>
+              <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#myModal_{{ forloop.counter }}">Check Out</a>
             </div>
           </div>
         </div>
