@@ -1,28 +1,51 @@
-{% extends "base.html" %} {% block content %} {% load static %}
-<div class="container pt-2">
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container pt-5 pb-5" style="background-image: url('{% static "hero-bg.png" %}'); background-repeat: no-repeat; background-size: cover;">
     <div class="row align-items-center justify-content-between">
       <div class="col-lg-6">
         <div class="text-center text-lg-start ps-lg-5">
           <h1 class="display-2 fw-bold">Good Food for Better Health</h1>
           <p class="mt-4 fs-5">
-            Stay in the know with the ESR Newsletter, or unlock
-            exclusive perks by joining the
+            Hello to You! You will find food, harmony, and laughter here
           </p>
           <div class="mt-4 pb-2 d-flex justify-content-center">
-            <a href="/meal/" class="btn btn-outline-success"
-              >Go to Meal</a
-            >
+            <a href="/meal/" class="btn btn-outline-success">Go to Meal</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 text-center ">
+      <div class="col-lg-6 text-center">
         <img
           src="{% static 'hero-content.png' %}"
-          {% comment %} src="https://i.ibb.co/QnZmKxS/cover2.webp" {% endcomment %}
           alt=""
           class="img-fluid sm-pt-2"
           style="height: 540px"
         />
+      </div>
+    </div>
+  </div>
+<div class="container pt-5 pb-5">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-6">
+        <img
+          src="{% static 'about-1.jpg' %}"
+          alt=""
+          class="img-fluid sm-pt-2"
+          style="height: 540px"
+        />
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="text-center text-lg-start ps-lg-5">
+          <h1 class="display-2 fw-bold">About Our Restaurant</h1>
+          <p class="mt-4 fs-5">
+            First, it’s an opportunity to humanize your restaurant and tell your story. Think of it this way: if the Menu page is the “what” you do, and the Contact page is the “where” you do it, the About Us page is the “who” and “why.” It’s a chance to create a human connection with your online audience. Why not take advantage of it? 
+
+Second, it’s extra content to add to your website. Search engines like content. It makes them happy. So if you can write a few hundred extra words in an About Us page, it may give your SEO a little boost.
+          </p>
+          <div class="mt-4 pb-2 d-flex justify-content-center">
+            <a href="/meal/" class="btn btn-outline-success">Go to Meal</a>
+          </div>
+        </div>  
       </div>
     </div>
   </div>
